@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#contenitore div{
+    position: relative;
+    height: 45px;
+    width: 65px;
+    background-color: skyblue;
+    display: inline-block;
+    line-height: 3;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#contenitore div:hover div{
+    opacity: 1;
+}
+
+#contenitore div div{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    opacity: 0;
+    background-color: inherit;
+    box-shadow: 0px 0px 7px 1px gray;
+}
